@@ -43,10 +43,9 @@ body {
 .profile-image {
   top: 100%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); <!-- !important property -->
 }
 ```
-
 ## Author
 
 - Frontend Mentor - [@shamizen](https://www.frontendmentor.io/profile/shamizen)
