@@ -10,7 +10,6 @@
   --very-dark-desaturated-blue: hsl(229, 23%, 23%);
   --dark-grayish-blue: hsl(227, 10%, 46%);
 
-  --profile-width: 96px;
   --profile-height: 96px;
 
   --ff-kumbh-sans: 'Kumbh Sans', sans-serif;
@@ -51,7 +50,9 @@ body {
   position: absolute;
   border: 5px solid white;
   border-radius: 50%;
-  top: calc(140px - (var(--profile-height)+10) / 2);
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .profile-data {
@@ -64,8 +65,6 @@ body {
   width: 100%;
   height: 140px;
   background-image: url(./images/bg-pattern-card.svg);
-  display: flex;
-  justify-content: center;
 }
 
 .name-age-container {

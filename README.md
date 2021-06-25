@@ -39,6 +39,12 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: right 51vw bottom 40vh, left 49vw top 52vh;
 }
+
+.profile-image {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 ```
 
 ## Author
