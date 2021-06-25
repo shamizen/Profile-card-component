@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  --profile-width: 96px;
+  --profile-height: 96px;
+
+  --ff-kumbh-sans: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  min-width: 375px;
+  min-height: 100vh;
+  background-color: var(--dark-cyan);
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 51vw bottom 40vh, left 49vw top 52vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.card-container {
+  background-color: white;
+  min-width: 327px;
+  width: 350px;
+  height: 374px;
+  overflow: hidden;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  position: absolute;
+  border: 5px solid white;
+  border-radius: 50%;
+  top: calc(140px - (var(--profile-height)+10) / 2);
+  /* top: background height - ((profile image height + (2 * border-radius)) /2 ) */
+}
+
+.profile-data {
+  position: absolute;
+  top: 150%;
+  text-align: center;
+}
+
+.background-image {
+  width: 100%;
+  height: 140px;
+  background-image: url(./images/bg-pattern-card.svg);
+  display: flex;
+  justify-content: center;
+}
+
+.name-age-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-family: var(--ff-kumbh-sans);
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+  margin-right: 0.5rem;
+}
+
+.age {
+  font-family: var(--ff-kumbh-sans);
+  color: var(--dark-grayish-blue);
+}
+
+.city {
+  font-family: var(--ff-kumbh-sans);
+  color: var(--dark-grayish-blue);
+}
+
+.btm-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  border-top: 1px solid rgb(199, 197, 197);
+}
+
+.stats-container .data {
+  font-family: var(--ff-kumbh-sans);
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+  margin-bottom: 0.25rem;
+}
+
+.stats-container .text {
+  font-family: var(--ff-kumbh-sans);
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.stats {
+  text-align: center;
+}
