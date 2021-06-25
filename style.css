@@ -52,7 +52,6 @@ body {
   border: 5px solid white;
   border-radius: 50%;
   top: calc(140px - (var(--profile-height)+10) / 2);
-  /* top: background height - ((profile image height + (2 * border-radius)) /2 ) */
 }
 
 .profile-data {
